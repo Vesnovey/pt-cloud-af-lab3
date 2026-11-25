@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Учебная демонстрация облачной защиты веб-приложений PT Cloud AF">
+  <title>PT Cloud AF — учебный лендинг</title>
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/config.js" defer></script>
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+  <header class="shell top" id="top">
+    <a class="brand" href="#top"><i></i>PT Cloud AF</a>
+    <nav aria-label="Навигация"><a href="#product">О продукте</a><a href="creatives.html">Креативы</a></nav>
+  </header>
+  <main>
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Облачный WAF для бизнеса</p>
+        <h1 id="hero-title">Защита сайта<br>и API в облаке</h1>
+        <p class="intro">PT Cloud AF проверяет входящий веб-трафик и помогает защищать интернет-магазины и онлайн-сервисы на уровне приложений.</p>
+        <a class="button" href="#demo" data-cta="hero">Запросить демо</a>
+        <p class="fine">Учебная демонстрация без сбора контактов</p>
+      </div>
+      <img class="hero-art" src="assets/gateway.webp" width="1500" height="1000" alt="">
+    </section>
+    <section class="shell split info" id="product">
+      <div><p class="eyebrow">О продукте</p><h2>Как устроена облачная защита</h2></div>
+      <div>
+        <article><h3>Фильтрация веб-трафика</h3><p>Запросы к сайту и API проходят через облачный межсетевой экран уровня приложений.</p></article>
+        <article><h3>Подписка вместо покупки оборудования</h3><p>Подключение и условия обслуживания согласуются с технологическим партнёром.</p></article>
+        <article><h3>Демонстрация на примере вашего сценария</h3><p>Выберите тип веб-ресурса и тему, которую хотите разобрать на демо.</p><a href="#demo" class="text-link" data-cta="product">Перейти к демо</a></article>
+      </div>
+    </section>
+    <section class="shell split conversion" id="demo">
+      <div><p class="eyebrow">Демо-запрос</p><h2>Какую защиту хотите посмотреть?</h2><p>Выберите два параметра. После отправки на этой странице появится подтверждение учебной заявки.</p></div>
+      <form id="demo-form">
+        <label for="resource">Тип веб-ресурса</label>
+        <select id="resource" name="resource" required>
+          <option value="">Выберите тип</option>
+          <option>Интернет-магазин</option>
+          <option>SaaS-сервис</option>
+          <option>Финтех-сервис</option>
+          <option>Другой веб-сервис</option>
+        </select>
+        <label for="topic">Тема демо</label>
+        <select id="topic" name="topic" required>
+          <option value="">Выберите тему</option>
+          <option>Подключение облачного WAF</option>
+          <option>Защита сайта и API</option>
+          <option>Условия подписки</option>
+        </select>
+        <button class="button" type="submit">Отправить учебную заявку</button>
+        <p class="fine">Форма подтверждается в браузере.</p>
+        <p id="confirmation" class="confirmation" role="status" tabindex="-1" hidden>Учебная заявка принята. Демонстрационный сценарий завершён.</p>
+        <noscript><p>Для отправки учебной заявки включите JavaScript.</p></noscript>
+      </form>
+    </section>
+    <section class="shell qa" id="qa" hidden>
+      <h2>Журнал технической проверки</h2>
+      <p>События этой сессии зарегистрированы в браузере. Журнал подходит для проверки разметки сайта.</p>
+      <pre id="events" aria-live="polite"></pre>
+      <button class="quiet" id="reset" type="button">Начать новую проверку</button>
+    </section>
+    <aside class="shell consent" id="consent" hidden>
+      <p>Разрешить отправку обезличенных событий учебного теста в Google Analytics и Яндекс Метрику?</p>
+      <button class="button" id="accept" type="button">Разрешить</button>
+      <button class="quiet" id="decline" type="button">Продолжить без аналитики</button>
+    </aside>
+  </main>
+  <footer class="shell footer"><span>Учебный проект о PT Cloud AF</span><a href="creatives.html">Рекламные макеты</a></footer>
+</body>
+</html>
